@@ -24,6 +24,6 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Игрок умер!");
-        // Тут можно сделать рестарт, экран смерти и т.д.
+        GameManager.Instance.GameOver(); // <- вызываем проигрыш
     }
 }
